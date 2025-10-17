@@ -5,7 +5,7 @@
   <title>Fetch /terms Demo</title>
 </head>
 <body>
-  <h1>Fetch http://mil.psy.ntu.edu.tw:5000/terms</h1>
+  <h1>Fetch https://mil.psy.ntu.edu.tw:5000/terms</h1>
   <button id="btn">Fetch again</button>
   <pre id="out">Loading…</pre>
 
@@ -14,7 +14,7 @@
       const out = document.getElementById('out');
       out.textContent = 'Requesting…';
       try {
-        const resp = await fetch('http://mil.psy.ntu.edu.tw:5000/terms');
+        const resp = await fetch('https://mil.psy.ntu.edu.tw:5000/terms');
         let info = `HTTP ${resp.status} ${resp.statusText}\n`;
         const ct = resp.headers.get('content-type') || '';
 
